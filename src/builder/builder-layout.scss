@@ -1,0 +1,36 @@
+@import 'node_modules/@material/layout-grid/mdc-layout-grid';
+
+$palette: (
+  grey:     #EFEFEF
+);
+
+body {
+  padding-top: 0 !important;
+}
+
+.builder {
+  &-draggables {
+    height: 110px;
+    background: map-get($palette, grey);
+    clear: both;
+    padding: 5px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  &-droppables {
+    > div {
+      margin-bottom: 20px;
+    }
+    .content {
+      .draggable-component {
+        display: block;
+        float: none;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

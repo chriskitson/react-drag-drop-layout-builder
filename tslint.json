@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    // override tslint-react rules here
+    "jsx-wrap-multiline": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "no-submodule-imports": false,
+    "jsx-no-multiline-js": false,
+    "trailing-comma": false,
+    "jsx-no-lambda": false,
+    "no-this-assignment": false
+  }
+}
