@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as uuid from 'uuid/v4';
 import { DraggableComponent } from '../';
 import { IComponent, IComponentType } from '../../interfaces';
 import { ContentBuilderGridComponent } from './';
@@ -31,7 +30,7 @@ export const ContentBuilderDraggableComponent = ({
   } else {
     return (
       <DraggableComponent
-        key={uuid()}
+        key={`drag-${id}`}
         name={name}
         type={type}
         onDragStart={() => null}

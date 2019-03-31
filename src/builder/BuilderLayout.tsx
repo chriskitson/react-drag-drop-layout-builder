@@ -1,6 +1,5 @@
 import { fromJS } from 'immutable';
 import * as React from 'react';
-import * as uuid from 'uuid/v4';
 
 import './builder-layout.scss';
 
@@ -47,9 +46,9 @@ export class BuilderLayout extends React.Component {
       <div className='builder'>
         <div className='builder-draggables'>
           {
-           DraggableComponents.map(({ name, type }: IComponent) =>
+           DraggableComponents.map(({ name, type }: IComponent, index: number) =>
               <DraggableComponent
-                key={uuid()}
+                key={`comp-${index}`}
                 name={name}
                 type={type}
                 onDragStart={this.onDragStart}
