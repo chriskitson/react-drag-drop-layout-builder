@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './droppable-component';
+import './droppable-component.scss';
 
 export interface IDroppableComponent {
   name: string;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './content-component';
+import './content-component.scss';
 
 export interface IContentComponent {
   children: React.ReactNode;

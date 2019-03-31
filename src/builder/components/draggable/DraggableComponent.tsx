@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './draggable-component';
+import './draggable-component.scss';
 
 export interface IDraggableComponent {
   name: string;
